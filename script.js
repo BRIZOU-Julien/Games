@@ -37,7 +37,7 @@ function setupWindow(win) {
   win.bringToFront = bringToFront;
 
   /* DRAG on #win-pc and #win-insta */
-  if (win.id === 'win-pc' || win.id === 'win-insta') {
+  if (win.id === 'win-pc' || win.id === 'win-insta' || win.id === 'win-email') {
     let isDragging = false, offsetX = 0, offsetY = 0;
     titlebar.addEventListener('mousedown', e => {
       if (e.button !== 0 || win.classList.contains('maximized')) return;
@@ -121,7 +121,7 @@ function setupWindow(win) {
   // **Updated**: hide—not remove—PC or Insta windows so they can re-open infinitely
   btnClose.addEventListener('click', e => {
     e.stopPropagation();
-    if (win.id === 'win-pc' || win.id === 'win-insta') {
+    if (win.id === 'win-pc' || win.id === 'win-insta' || win.id === 'win-email') {
       win.style.display = 'none';
     } else {
       win.remove();
