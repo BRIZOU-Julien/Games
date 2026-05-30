@@ -198,7 +198,8 @@ function goToLink() {
 
   // Other externals
   const urlMap = {
-    insta:    'https://www.instagram.com/julienbrizou/',
+    artstation:   'https://www.artstation.com/julienbrizou',
+    insta:        'https://www.instagram.com/julienbrizou/',
     twitter:      'https://x.com/brizou_julien',
     //'chaine-vod': 'https://www.youtube.com/@mnkway/featured',
     //letterboxd:   'https://letterboxd.com/mnkway/',
