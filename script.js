@@ -37,7 +37,7 @@ function setupWindow(win) {
   win.bringToFront = bringToFront;
 
   /* DRAG on #win-pc and #win-insta */
-  if (win.id === 'win-pc' || win.id === 'win-insta' || win.id === 'win-email') {
+  if (win.id === 'win-pc' || win.id === 'win-insta' || win.id === 'win-mail') {
     let isDragging = false, offsetX = 0, offsetY = 0;
     titlebar.addEventListener('mousedown', e => {
       if (e.button !== 0 || win.classList.contains('maximized')) return;
@@ -121,7 +121,7 @@ function setupWindow(win) {
   // **Updated**: hide—not remove—PC or Insta windows so they can re-open infinitely
   btnClose.addEventListener('click', e => {
     e.stopPropagation();
-    if (win.id === 'win-pc' || win.id === 'win-insta' || win.id === 'win-email') {
+    if (win.id === 'win-pc' || win.id === 'win-insta' || win.id === 'win-mail') {
       win.style.display = 'none';
     } else {
       win.remove();
@@ -182,7 +182,7 @@ function goToLink() {
 
   // Mon Email
   if (dest === 'mail') {
-    const pcWin = document.getElementById('win-email');
+    const pcWin = document.getElementById('win-mail');
     if (!pcWin) return;
     pcWin.style.display = '';
     pcWin.bringToFront();
@@ -211,6 +211,22 @@ function goToLink() {
     });
     return;
   }*/
+
+    // Mail
+  if (dest === 'mail') {
+    const instaWin = document.getElementById('win-mail');
+    if (!instaWin) return;
+    instaWin.style.display = '';
+    instaWin.bringToFront();
+    instaWin.style.position = 'fixed';
+    instaWin.style.transition = 'none';
+    requestAnimationFrame(() => {
+      const { width: w, height: h } = instaWin.getBoundingClientRect();
+      instaWin.style.left = `${(window.innerWidth - w)/2}px`;
+      instaWin.style.top  = `${(window.innerHeight - h)/2}px`;
+    });
+    return;
+  }
 
   // Other externals
   const urlMap = {
