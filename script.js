@@ -213,7 +213,7 @@ function goToLink() {
   }*/
 
     // Mail
-  if (dest === 'mail') {
+  /*if (dest === 'mail') {
     const instaWin = document.getElementById('win-mail');
     if (!instaWin) return;
     instaWin.style.display = '';
@@ -226,7 +226,7 @@ function goToLink() {
       instaWin.style.top  = `${(window.innerHeight - h)/2}px`;
     });
     return;
-  }
+  }*/
 
   // Other externals
   const urlMap = {
