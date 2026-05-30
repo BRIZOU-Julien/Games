@@ -190,7 +190,7 @@ function goToLink() {
     mailWin.style.transition = 'none';
     requestAnimationFrame(() => {
       const { width: w, height: h } = mailWin.getBoundingClientRect();
-      mailWin.style.left = `${(window.innerWidth - w)/3}px`;
+      mailWin.style.left = `${(window.innerWidth - w)/7}px`;
       mailWin.style.top  = `${(window.innerHeight - h)/2}px`;
     });
     return;
