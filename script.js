@@ -181,7 +181,7 @@ function goToLink() {
   }
 
   // Instagram
-  if (dest === 'insta') {
+  /*if (dest === 'insta') {
     const instaWin = document.getElementById('win-insta');
     if (!instaWin) return;
     instaWin.style.display = '';
@@ -194,13 +194,14 @@ function goToLink() {
       instaWin.style.top  = `${(window.innerHeight - h)/2}px`;
     });
     return;
-  }
+  }*/
 
   // Other externals
   const urlMap = {
-    twitter:      'https://x.com/MNKway_',
-    'chaine-vod': 'https://www.youtube.com/@mnkway/featured',
-    letterboxd:   'https://letterboxd.com/mnkway/',
+    insta:    'https://www.instagram.com/julienbrizou/',
+    twitter:      'https://x.com/brizou_julien',
+    //'chaine-vod': 'https://www.youtube.com/@mnkway/featured',
+    //letterboxd:   'https://letterboxd.com/mnkway/',
   };
   if (urlMap[dest]) {
     window.open(urlMap[dest], '_blank');
