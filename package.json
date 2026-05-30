@@ -13,15 +13,18 @@
 ,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tathanito/mnkway.git"
+    "url": "git+https://github.com/BRIZOU-Julien/games.git"
+    //"url": "git+https://github.com/Tathanito/mnkway.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tathanito/mnkway/issues"
+    "url": "https://github.com/BRIZOU-Julien/games/issues"
+    //"url": "https://github.com/Tathanito/mnkway/issues"
   },
-  "homepage": "https://github.com/Tathanito/mnkway#readme",
+  "homepage": "https://github.com/BRIZOU-Julien/games#readme",
+  //"homepage": "https://github.com/Tathanito/mnkway#readme",
   "description": "",
   "devDependencies": {
     "nodemon": "^3.1.10",
