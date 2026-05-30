@@ -37,7 +37,7 @@ function setupWindow(win) {
   win.bringToFront = bringToFront;
 
   /* DRAG on #win-pc and #win-insta */
-  if (win.id === 'win-pc' || win.id === 'win-insta') {
+  if (win.id === 'win-pc' || win.id === 'win-insta' || win.id === 'win-email') {
     let isDragging = false, offsetX = 0, offsetY = 0;
     titlebar.addEventListener('mousedown', e => {
       if (e.button !== 0 || win.classList.contains('maximized')) return;
@@ -133,7 +133,7 @@ function setupWindow(win) {
 /* ───────── Twitch status ───────── */
 const clientId    = 'YOUR_CLIENT_ID';
 const accessToken = 'YOUR_OAUTH_TOKEN';
-const userLogin   = 'mnkway';
+const userLogin   = 'julienbrizou';
 const profileEl   = document.querySelector('.profile');
 const statusText  = document.getElementById('stream-text');
 async function checkStream() {
@@ -144,10 +144,10 @@ async function checkStream() {
     const json = await res.json();
     if (json.data?.length) {
       profileEl.classList.replace('offline','online');
-      statusText.textContent = 'En Stream';
+      statusText.textContent = 'Online';
     } else {
       profileEl.classList.replace('online','offline');
-      statusText.textContent = 'Pas en Stream';
+      statusText.textContent = 'Offline';
     }
   } catch {}
 }
@@ -167,6 +167,22 @@ function goToLink() {
   // Mon PC
   if (dest === 'mon-pc') {
     const pcWin = document.getElementById('win-pc');
+    if (!pcWin) return;
+    pcWin.style.display = '';
+    pcWin.bringToFront();
+    pcWin.style.position = 'fixed';
+    pcWin.style.transition = 'none';
+    requestAnimationFrame(() => {
+      const { width: w, height: h } = pcWin.getBoundingClientRect();
+      pcWin.style.left = `${(window.innerWidth - w)/2}px`;
+      pcWin.style.top  = `${(window.innerHeight - h)/2}px`;
+    });
+    return;
+  }
+
+  // Mon Email
+  if (dest === 'mail') {
+    const pcWin = document.getElementById('win-email');
     if (!pcWin) return;
     pcWin.style.display = '';
     pcWin.bringToFront();

@@ -36,6 +36,7 @@
       <div class="link-card" data-link="artstation"><span class="text">Artstation</span><span class="menu">⋮</span></div>
       <div class="link-card" data-link="insta"><span class="text">Instagram</span><span class="menu">⋮</span></div>
       <div class="link-card" data-link="twitter"><span class="text">Twitter</span><span class="menu">⋮</span></div>
+      <div class="link-card" data-link="mail"><span class="text">Gmail</span><span class="menu">⋮</span></div>
       <!--<div class="link-card" data-link="chaine-vod"><span class="text">Chaîne VOD</span><span class="menu">⋮</span></div> -->
       <!--<div class="link-card" data-link="letterboxd"><span class="text">Letterboxd</span><span class="menu">⋮</span></div> -->
       <!--<div class="link-card" data-link="mangacollec"><span class="text">Mangacollec</span><span class="menu">⋮</span></div> -->
@@ -49,7 +50,7 @@
 <!-- Fenêtre XP : Jeux -->
 <div class="xp-window" id="win-jeux" data-title="Jeux">
   <div class="titlebar">
-    <span class="title-text">Jeux</span>
+    <span class="title-text">Games Played</span>
     <div class="controls">
       <button class="control-btn minimize" aria-label="Minimiser"></button>
       <button class="control-btn maximize" aria-label="Maximiser"></button>
@@ -63,7 +64,7 @@
       <input
         type="text"
         id="game-search"
-        placeholder="🔍 Rechercher un jeu…"
+        placeholder="🔍 Search for a game…"
         autocomplete="off"
       />
     </div>
@@ -78,6 +79,30 @@
     <div class="xp-window" id="win-pc" data-title="Mon PC" style="display:none;">
       <div class="titlebar">
         <span class="title-text">Mon PC</span>
+        <div class="controls">
+          <button class="control-btn minimize" aria-label="Minimiser"></button>
+          <button class="control-btn maximize" aria-label="Maximiser"></button>
+          <button class="control-btn close"    aria-label="Fermer"></button>
+        </div>
+      </div>
+      <div class="window-content">
+        <table class="config-table">
+          <tr><th>GPU</th><td>MSI NVIDIA GeForce RTX 5080 16G Ventus 3X OC Plus</td></tr>
+          <tr><th>CPU</th><td>Ryzen 7 9800X3D</td></tr>
+          <tr><th>Carte mère</th><td>ASUS TUF Gaming B650-PLUS</td></tr>
+          <tr><th>RAM</th><td>32 Go Corsair Vengeance DDR5 6000 MHz CL30 AMD Expo</td></tr>
+          <tr><th>PSU</th><td>MSI MPG A100G</td></tr>
+          <tr><th>Boîtier</th><td>Fractal North Charcoal Black Mesh</td></tr>
+          <tr><th>Ventirad</th><td>Dark Rock Pro 5</td></tr>
+          <tr><th>Ventilos</th><td>BeQuiet Silent Wings 4</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Fenêtre XP : Mon Email -->
+    <div class="xp-window" id="win-email" data-title="Gmail Adress" style="display:none;">
+      <div class="titlebar">
+        <span class="title-text">My Email</span>
         <div class="controls">
           <button class="control-btn minimize" aria-label="Minimiser"></button>
           <button class="control-btn maximize" aria-label="Maximiser"></button>
