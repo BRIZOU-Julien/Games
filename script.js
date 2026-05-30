@@ -182,16 +182,16 @@ function goToLink() {
 
   // Mon Email
   if (dest === 'mail') {
-    const pcWin = document.getElementById('win-mail');
-    if (!pcWin) return;
-    pcWin.style.display = '';
-    pcWin.bringToFront();
-    pcWin.style.position = 'fixed';
-    pcWin.style.transition = 'none';
+    const mailWin = document.getElementById('win-mail');
+    if (!mailWin) return;
+    mailWin.style.display = '';
+    mailWin.bringToFront();
+    mailWin.style.position = 'fixed';
+    mailWin.style.transition = 'none';
     requestAnimationFrame(() => {
-      const { width: w, height: h } = pcWin.getBoundingClientRect();
-      pcWin.style.left = `${(window.innerWidth - w)/2}px`;
-      pcWin.style.top  = `${(window.innerHeight - h)/2}px`;
+      const { width: w, height: h } = mailWin.getBoundingClientRect();
+      mailWin.style.left = `${(window.innerWidth - w)/3}px`;
+      mailWin.style.top  = `${(window.innerHeight - h)/2}px`;
     });
     return;
   }
