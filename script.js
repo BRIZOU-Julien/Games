@@ -188,6 +188,9 @@ function goToLink() {
     mailWin.bringToFront();
     mailWin.style.position = 'fixed';
     mailWin.style.transition = 'none';
+    // Size Window Mail
+    mailWin.style.width = '600px';
+    mailWin.style.height = '120px';
     requestAnimationFrame(() => {
       const { width: w, height: h } = mailWin.getBoundingClientRect();
       mailWin.style.left = `${(window.innerWidth - w)/2}px`;
