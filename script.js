@@ -3,7 +3,7 @@ let zTop = 1000;
 /* ─────────────── Jeux list ─────────────── */
 /* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z */
 const gameSlugs = [
-  'Resident_Evil_2', 'Ico', 'Inscryption', 'Poco', 'Prince_of_Persia_The_Forgotten_Sands', 'Prince_of_Persia_The_Sands_of_Time',
+  'Inscryption', 'Poco', 'Prince_of_Persia_The_Forgotten_Sands', 'Prince_of_Persia_The_Sands_of_Time',
 ];
 
 /* ──────────────────────────────────────────
