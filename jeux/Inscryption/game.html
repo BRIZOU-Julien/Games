@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeu – Mnkway</title>
+  <title>Game – Julien</title>
   <link rel="stylesheet" href="../../styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
     :root { --xp-blue-dark:#0f4d92; --xp-blue-light:#3a6ea5; --xp-cream:#e5ecf9; }
     h2 { font-family:"Press Start 2P",cursive; letter-spacing:-1px; margin:0 0 .5rem; }
     .guide-section h2,
-    .vod-section h2 { text-align: center; }
+    .trailer-section h2 { text-align: center; }
     .blog-window .window-content {
       padding:1rem;
       display:grid;
@@ -38,7 +38,7 @@
     .cover {grid-area:cover;}
     .info {grid-area:info;}
     .guide-section {grid-area:guide;}
-    .vod-section {grid-area:vod;}
+    .trailer-section {grid-area:vod;}
     .section{
       background:var(--xp-cream);
       padding:1rem;
@@ -69,13 +69,13 @@
       aspect-ratio: 16/9;
       border: none;
     }
-    .vod-video {
+    .trailer-video {
       position: relative;
       width: 100%;
       padding-top: 56.25%;
       overflow: hidden;
     }
-    .vod-video iframe {
+    .trailer-video iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
@@ -115,11 +115,11 @@
       </div>
       <div class="window-content">
         <div class="cover">
-          <img src="img.jpg" alt="Image goatesque">
+          <img src="img.jpg" alt="Game Image">
         </div>
         <div class="section info">
-          <h2>Note</h2>
-          <!-- A MODIFIER PAR JEANNOT : note (étoiles) -->
+          <h2>Mark</h2>
+          <!-- A MODIFIER : note (étoiles) -->
           <div class="stars" id="star-bar">
             <span class="star filled"></span>
             <span class="star filled"></span>
@@ -127,50 +127,51 @@
             <span class="star"></span>
             <span class="star"></span>
           </div>
-          <h2>Critique</h2>
-          <!-- A MODIFIER PAR JEANNOT : critique -->
+          <h2>Critics</h2>
+          <!-- A MODIFIER : critique -->
           <div class="critic-box">
-            Jean▸ enorme caca !
+            Inscryption is blablabla
           </div>
         </div>
         <div class="section guide-section">
-          <h2>Ce que j'ai utilisé ?</h2>
+          <h2>Where to play ?</h2>
           <ul class="used-list">
-            <!-- A MODIFIER PAR JEANNOT : émulateur PS2 et PCSX2 -->
+            <!-- A MODIFIER : Lien Vers le Jeu -->
             <li>
-              <strong>REMAKE PC :</strong>
-              <a href="https://store.steampowered.com/app/883710/Resident_Evil_2/" target="_blank" rel="noopener">STEAM</a>
+              <strong>Link to the Game :</strong>
+              <a href="https://store.steampowered.com/app/1092790/Inscryption/" target="_blank" rel="noopener">STEAM</a>
             </li>
-            <!-- A MODIFIER PAR JEANNOT : tuto pour s’en servir -->
-            <!--<li class="used-video">
-              <strong>Tuto pour s'en servir :</strong>
-              <iframe
-                title="Tutoriel PCSX2"
-                src="https://www.youtube.com/embed/JrSk_qyMPd0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </li>-->
-            <!-- A MODIFIER PAR JEANNOT : pack de Textures HD : GBA Temp -->
-            <li>
+             <!-- Ajouter une ligne si besoin -->
+            <!--<li>
               <strong>Pack de Textures HD :</strong>
               <a href="https://gbatemp.net/threads/ico-usa-eu-hd-remaster.630164/" target="_blank" rel="noopener">GBATemp</a>
-            </li>
+            </li>     -->
           </ul>
         </div>
-        <div class="section vod-section">
-          <h2>VOD</h2>
-          <!-- A MODIFIER PAR JEANNOT : lien de la VOD -->
-          <div class="vod-video">
+        <div class="section trailer-section">
+          <h2>Trailer</h2>
+          <!-- A MODIFIER : Trailer du jeu -->
+           <!--
+          <div class="trailer-video">
             <iframe
               title="VOD Longplay"
-              src="https://www.youtube.com/embed/videoseries?list=PL_m8o25CB8u-tUsAolY0EXvzUDp2heDf2"
+              src="https://www.youtube.com/embed/jTVG5kdHRQQ"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>-->
+
+          <!-- A MODIFIER : lien du trailer -->
+          <div class="trailer-video">
+            <iframe
+              title="trailer"
+              src="https://www.youtube.com/embed/8r3xoRwwN6I"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
         </div>
-        <p class="footer-note">*Aucun contenu n'est hébergé ici*</p>
+        <p class="footer-note">*End*</p>
       </div>
     </div>
   </div>
