@@ -262,7 +262,19 @@ function autoLoadJeux() {
     const card  = document.createElement('div');
     card.className       = 'link-card';
     card.dataset.link    = `jeux/${slug}`;
-    card.innerHTML       = `<span class="text">${label}</span><span class="menu">⋮</span>`;
+    /*card.innerHTML       = `<span class="text">${label}</span><span class="menu">⋮</span>`;*/
+    card.innerHTML = `
+  <img
+    class="game-icon"
+    src="images/game-icons/${slug}.png"
+    alt="${label}"
+  >
+
+  <span class="text">${label}</span>
+
+  <span class="menu">⋮</span>
+  `;
+
     card.addEventListener('click', goToLink);
     card.querySelector('.menu').addEventListener('click', e => e.stopPropagation());
     container.appendChild(card);
