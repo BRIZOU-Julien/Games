@@ -18,7 +18,7 @@ body{font-family:Tahoma, Geneva, sans-serif;
              white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
 .taskbar-btn:hover{background:#e5ecf9;}
 
-* ========== windows ========== */
+/* ========== windows ========== */
 .xp-window{
   border:2px solid #000080; border-radius:4px; background:#c3d9ff;
   box-shadow:4px 4px 0 rgba(0,0,0,.5); margin-bottom:2rem; width:100%;
