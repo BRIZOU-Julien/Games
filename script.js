@@ -3,8 +3,10 @@ let zTop = 1000;
 /* ─────────────── Jeux list ─────────────── */
 /* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z */
 const gameSlugs = [
-  'Caravan_Sandwitch', 'For_The_King', 'Inscryption', 'Mika_and_the_Mountain_Witch', 'Poco', 'Prince_of_Persia_The_Forgotten_Sands', 'Prince_of_Persia_The_Sands_of_Time',
-  'South_Of_Midnight', 'Storebound', 'Thronefall', 'Viewfinder', 'Wizard_With_A_Gun',
+  'Abiotic_Factor', 'Art_Of_Rally', 'Caravan_Sandwitch', 'Fez', 'Firewatch', 'For_The_King', 'Friends_vs_Friends', 'Fumes', 
+  'Gris', 'Inscryption', 'Judofuri', 'Kena_Bridges_of_Spirits', 'Lil_Gator_Game', 'Lost_In_Random', 
+  'Mika_and_the_Mountain_Witch', 'Murky_Divers', 'No_Rest_For_The_Wicked', 'Pit_Of_Goblin', 'Poco', 'Prince_of_Persia_The_Forgotten_Sands', 'Prince_of_Persia_The_Sands_of_Time',
+  'Rain_World', 'South_Of_Midnight', 'Storebound', 'Thronefall', 'Viewfinder', 'Wizard_With_A_Gun',
 ];
 
 /* ──────────────────────────────────────────
