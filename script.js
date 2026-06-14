@@ -6,7 +6,7 @@ const gameSlugs = [
   'Abiotic_Factor', 'Art_Of_Rally', 'Caravan_Sandwitch', 'Fez', 'Firewatch', 'For_The_King', 'Friends_vs_Friends', 'Fumes', 
   'Gris', 'Inscryption', 'Judofuri', 'Kena_Bridges_of_Spirits', 'Lil_Gator_Game', 'Lost_In_Random', 
   'Mika_and_the_Mountain_Witch', 'Murky_Divers', 'No_Rest_For_The_Wicked', 'Pit_Of_Goblin', 'Poco', 'Prince_of_Persia_The_Forgotten_Sands', 'Prince_of_Persia_The_Sands_of_Time',
-  'Rain_World', 'South_Of_Midnight', 'Storebound', 'Thronefall', 'Viewfinder', 'Wizard_With_A_Gun',
+  'Rain_World', 'Reventure', 'RV_There_Yet', 'Selfloss', 'Shady_Part_Of_Me', 'Sheepy_A_Short_Adventure', 'South_Of_Midnight', 'Spilled', 'Storebound', 'The_Last_Campfire', 'Thronefall', 'Viewfinder', 'Voyagers_Of_Nera', 'Wizard_With_A_Gun',
 ];
 
 /* ──────────────────────────────────────────
